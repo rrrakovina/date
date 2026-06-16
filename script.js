@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
             _template: 'box' // FormSubmit premium template look
         };
 
-        fetch('https://formsubmit.co/ajax/alimpkonst@gmail.com', {
+        fetch('https://formsubmit.co/ajax/1c98e9ef47e25ece7ff01885932c4dc8', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
