@@ -181,6 +181,20 @@ document.addEventListener('DOMContentLoaded', () => {
         sendData();
     });
 
+    // Meme button interactivity
+    const btnMeme = document.getElementById('btn-meme');
+    btnMeme.addEventListener('click', () => {
+        if (btnMeme.textContent === 'Не за что') {
+            btnMeme.textContent = 'Спасибо!';
+            btnMeme.classList.remove('btn-secondary');
+            btnMeme.classList.add('btn-primary');
+        } else {
+            btnMeme.textContent = 'Не за что';
+            btnMeme.classList.remove('btn-primary');
+            btnMeme.classList.add('btn-secondary');
+        }
+    });
+
     // Transition between steps helper
     function switchStep(from, to) {
         steps[from].classList.remove('active');
