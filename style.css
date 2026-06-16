@@ -388,6 +388,15 @@ body {
     100% { opacity: 0; transform: translateY(-20px); }
 }
 
+.btn-pressed {
+    opacity: 0.6;
+    transform: scale(0.95) translateY(2px) !important;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.15) !important;
+    background: hsl(340, 10%, 90%) !important;
+    color: var(--text-light) !important;
+    pointer-events: none;
+}
+
 /* Mobile responsive fixes */
 @media (max-width: 480px) {
     .card {
