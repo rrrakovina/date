@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эвелина, у меня к тебе вопрос... ✨</title>
+    <!-- Google Fonts: Nunito for cute and soft text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decorations">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+    </div>
+
+    <main class="container">
+        <!-- Step 1: The Main Question -->
+        <section id="step-1" class="step active">
+            <div class="card">
+                <div class="illustration-wrapper">
+                    <!-- Image will be copied here as cute_love_cat.png -->
+                    <img src="cute_love_cat.png" alt="Милый котик с письмом" class="illustration">
+                </div>
+                <h1 class="title">Эвелина, пойдешь со мной на свидание? ✨</h1>
+                <div class="btn-group">
+                    <button id="btn-yes" class="btn btn-primary">Да!</button>
+                    <button id="btn-no" class="btn btn-secondary">Нет</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2: Cuisine Selection -->
+        <section id="step-2" class="step">
+            <div class="card">
+                <h2 class="subtitle">Отлично! Давай выберем, какую кухню ты предпочитаешь? 🍕🍣</h2>
+                <div class="cuisine-grid">
+                    <div class="cuisine-card" data-value="Итальянская 🍕">
+                        <span class="cuisine-emoji">🍕</span>
+                        <span class="cuisine-name">Итальянская</span>
+                    </div>
+                    <div class="cuisine-card" data-value="Азиатская 🍣">
+                        <span class="cuisine-emoji">🍣</span>
+                        <span class="cuisine-name">Азиатская</span>
+                    </div>
+                    <div class="cuisine-card" data-value="Грузинская 🥟">
+                        <span class="cuisine-emoji">🥟</span>
+                        <span class="cuisine-name">Грузинская</span>
+                    </div>
+                    <div class="cuisine-card" data-value="Стритфуд 🍟">
+                        <span class="cuisine-emoji">🍟</span>
+                        <span class="cuisine-name">Стритфуд</span>
+                    </div>
+                    <div class="cuisine-card" data-value="Кофейня / Десерты 🍰">
+                        <span class="cuisine-emoji">🍰</span>
+                        <span class="cuisine-name">Кофейня / Десерты</span>
+                    </div>
+                </div>
+                <div class="navigation-group">
+                    <button id="btn-to-step3" class="btn btn-primary btn-disabled" disabled>Далее →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3: Date & Time Picker -->
+        <section id="step-3" class="step">
+            <div class="card">
+                <h2 class="subtitle">Когда тебе удобно встретиться? 📅</h2>
+                <div class="picker-container">
+                    <div class="input-wrapper">
+                        <label for="date-input" class="input-label">Выбери день:</label>
+                        <input type="date" id="date-input" class="custom-input">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="time-input" class="input-label">Удобное время:</label>
+                        <input type="time" id="time-input" class="custom-input">
+                    </div>
+                </div>
+                <div class="navigation-group">
+                    <button id="btn-submit" class="btn btn-primary">Отправить 💌</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4: Success / Thank You Screen -->
+        <section id="step-4" class="step">
+            <div class="card success-card">
+                <div class="heart-animation">🎈</div>
+                <h2 class="subtitle success-title">Ура! До встречи! 🎉</h2>
+                <p class="success-text">Договорились! Скоро напишу тебе, и всё обсудим. 😉</p>
+                <div class="love-footer">Жду с нетерпением ✨</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Canvas for confetti effect -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
