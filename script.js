@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnSubmit.textContent = 'Отправка... 💌';
 
         const payload = {
-            _subject: 'Новый ответ на свидание от Эвелины! 💌',
+            _subject: 'Новый ответ на свидание! 💌',
             _honey: '', // Honeypot field to prevent spam
             'Выбор кухни': selectedCuisine,
             'Дата свидания': selectedDate,
